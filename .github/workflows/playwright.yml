@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run Playwright tests
-      run: ENV=qa npx playwright test --project=chrome --workers=1
+      run: test:regression
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
