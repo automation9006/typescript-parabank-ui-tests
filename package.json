@@ -1,0 +1,44 @@
+{
+  "name": "typescript-parabank-ui-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint './**/*.{ts,tsx}'",
+    "test:regression": "ENV=qa npx playwright test --project=chrome --workers=1",
+    "test:qa": "ENV=qa npx playwright test homePageValidations.spec.ts --project=chrome --workers=1",
+    "test:uat": "ENV=uat npx playwright test --grep @sanity --project=chrome --workers=1",
+    "test:stg": "ENV=stg npx playwright test --grep @sanity --project=chrome --workers=1",
+    "test:prod": "ENV=prod npx playwright test --grep @sanity --project=chrome --workers=1",
+    "tags:sanity": "ENV=qa npx playwright test --project=chrome --grep @sanity --workers=1",
+    "test:chrome": "ENV=qa npx playwright test --project=chrome --workers=1",
+    "test:firefox": "ENV=qa npx playwright test --project=firefox --workers=1",
+    "test:webkit": "ENV=qa npx playwright test --project=webkit --workers=1",
+    "allureGenReport": "npx allure generate allure-results --clean",
+    "allurePublishReport": "npx allure open allure-report"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "author": "vamshi ponnam",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@faker-js/faker": "^9.5.0",
+    "@playwright/test": "^1.50.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.13.4",
+    "allure-commandline": "^2.32.2",
+    "allure-playwright": "^3.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.20.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
