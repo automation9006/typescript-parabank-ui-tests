@@ -1,6 +1,7 @@
 import { Page } from '@playwright/test'
 
 export default class HomePage{
+  
   constructor(public page:Page){
 
   }
@@ -20,7 +21,7 @@ export default class HomePage{
   textErrorTitle=this.page.locator('#rightPanel > h1[class=\'title\']')
   textErrorMessage=this.page.locator('#rightPanel > p[class=\'error\']')
 
-  async userLogin(userName: string,password: string){
+  async userLogin(userName: string, password: string) {
     await this.inputUserName.fill(userName)
     await this.inputPassword.fill(password)
     const loginButton = await this.page.waitForSelector('#loginPanel > form > div:nth-child(5) > input')

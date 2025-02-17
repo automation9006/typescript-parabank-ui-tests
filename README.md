@@ -18,15 +18,6 @@ Set up the repo with the above in and write the code that executes the following
 ○ When I try to login with an random username and password
 ○ Then I should get the error: “The username and password could not be verified"
 
-● API:
-○ Given I call a random cocktail 3 times
-○ When I store the cocktail name in an array
-○ Then my array should have 3 cocktails names
-
-Resources
-● Cocktail GET endpoint
-○ https://www.thecocktaildb.com/api.php#:~:text=Lookup%20a%20random%20cocktail
-
 ● Parabank front end link
 ○ https://parabank.parasoft.com/parabank/index.htm
 

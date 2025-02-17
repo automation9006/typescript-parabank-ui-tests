@@ -10,8 +10,8 @@ function generateUserRegFormData(){
     state : faker.location.state(),
     zipCode : faker.location.zipCode(),
     phone : faker.phone.number(),
-    ssn : faker.number.binary(),
-    userName : faker.string.alphanumeric(8),
+    ssn : faker.phone.number(),
+    userName : faker.string.alphanumeric(18),
     password : loginData.password,
     confirmPassword : loginData.password,
         
