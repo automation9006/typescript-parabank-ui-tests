@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","349","validate user registration success","chrome","Mon Feb 17 11:05:27 GMT 2025","skipped","Mon Feb 17 11:05:27 GMT 2025","tests to validate user registration journey","ui\userRegisteration.spec.ts","",""
+"","5181","validate home page title and menu links","chrome","Mon Feb 17 11:05:00 GMT 2025","passed","Mon Feb 17 11:05:05 GMT 2025","collection of tests on home page validations","ui\homePageValidations.spec.ts","",""
+"","7912","validate user login with in-valid logins combinations","chrome","Mon Feb 17 11:05:18 GMT 2025","passed","Mon Feb 17 11:05:26 GMT 2025","collection of login validations tests","ui\login.spec.ts","",""
+"","9299","validate user login with valid logins","chrome","Mon Feb 17 11:05:05 GMT 2025","failed","Mon Feb 17 11:05:15 GMT 2025","collection of login validations tests","ui\login.spec.ts","",""
