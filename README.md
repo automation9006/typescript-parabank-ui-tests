@@ -34,14 +34,11 @@ Things to think about/Bonus Points:
 
 
 
-# Playwright Project using JavaScript
+# Playwright Project using TypeScript
 
 
-## Clone the repository from github repo
-
-```shell
-git clone  <git url>
-``````
+## to download all the dependencies
+`npm install`
 
 ### run tests from scripts block with below command line
 
