@@ -34,6 +34,7 @@ test.describe('tests to validate user registration journey',() => {
       console.log('******************** ' + fakerData.userName)
       await expect(registerPage.messageWelcome).toHaveText('Welcome ' + fakerData.userName)
       await expect(registerPage.messageAccountCreated).toHaveText('Your account was created successfully. You are now logged in.')
+      await expect(registerPage.buttonLogout).toBeEnabled()
       await expect(registerPage.buttonLogout).toBeVisible()
     })
   })

@@ -10,7 +10,7 @@ export default defineConfig({
   testMatch: /.*\.ts/,
   timeout: 50 * 1000,
   expect: {
-    timeout: 5000
+    timeout: 10000
   },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,

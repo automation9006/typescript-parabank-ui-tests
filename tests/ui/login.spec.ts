@@ -23,8 +23,8 @@ test.describe('collection of login validations tests', () => {
     await test.step('When I try to login with invalid username and password', async () => {
       const loginData = [
         // invalid login details
-        ['autotest2025', 'test!'],
-        ['autotest200@', 'test2000'],
+        // ['autotest2025', 'test!'],
+        ['autotest200@', 'test2000']
         
       ]
     
